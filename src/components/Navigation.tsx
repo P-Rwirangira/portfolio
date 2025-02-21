@@ -14,7 +14,7 @@ const Navigation = () => {
         setIsMenuOpen(false);
       }
     };
-    
+
     if (isMenuOpen) {
       document.addEventListener("click", handleClickOutside);
     } else {
