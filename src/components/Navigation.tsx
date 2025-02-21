@@ -1,66 +1,100 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Navigation = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('home');
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  // Close menu when clicking outside
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (event.target instanceof Element && !event.target.closest(".mobile-menu") && !event.target.closest(".menu-button")) {
-        setIsMenuOpen(false);
+    const handleScroll = () => {
+      const sections = ['home', 'about', 'projects', 'contact'];
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= 100 && rect.bottom >= 100) {
+            setActiveSection(section);
+            break;
+          }
+        }
       }
     };
 
-    if (isMenuOpen) {
-      document.addEventListener("click", handleClickOutside);
-    } else {
-      document.removeEventListener("click", handleClickOutside);
-    }
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
-    return () => document.removeEventListener("click", handleClickOutside);
-  }, [isMenuOpen]);
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-secondary shadow-lg z-50">
-      <div className="container mx-auto px-4 flex justify-between items-center h-16">
-        <a href="#" className="text-2xl font-bold text-accent">P</a>
+    <>
+      {/* Desktop Navigation */}
+      <nav className="fixed top-0 left-10 right-10 bg-gray-800 shadow-lg z-50 hidden md:block px-8 rounded-b-2xl">
+        <div className="container mx-auto">
+          <div className="flex justify-between items-center h-16 text-lg">
+            <div className="flex space-x-8">
+              {['home', 'about'].map((section) => (
+                <a
+                  key={section}
+                  href={`#${section}`}
+                  onClick={() => scrollToSection(section)}
+                  className={`capitalize text-white hover:text-indigo-400 transition-colors duration-200 ${
+                    activeSection === section ? 'font-semibold text-indigo-400' : ''
+                  }`}
+                >
+                  {section}
+                </a>
+              ))}
+            </div>
+      
+            {/* Centered Portfolio Name */}
+            <a
+              href="#home"
+              onClick={() => scrollToSection('home')}
+              className="text-2xl font-bold text-white hover:text-indigo-400 transition-colors duration-200 mx-8"
+            >
+              P
+            </a>
+      
+            <div className="flex space-x-8 ">
+              {['projects', 'contact'].map((section) => (
+                <a
+                  key={section}
+                  href={`#${section}`}
+                  onClick={() => scrollToSection(section)}
+                  className={`capitalize text-white hover:text-indigo-400 transition-colors duration-200 ${
+                    activeSection === section ? 'font-semibold text-indigo-400' : ''
+                  }`}
+                >
+                  {section}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </nav>
 
-        {/* Hamburger menu icon */}
-        <button onClick={toggleMenu} className="md:hidden text-accent menu-button focus:outline-none">
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-          </svg>
-        </button>
-
-        {/* Desktop menu */}
-        <div className="hidden md:flex space-x-8">
-          {['home', 'about', 'projects', 'contact'].map((section) => (
-            <a key={section} href={`#${section}`} className="capitalize nav-link text-accent hover:text-primary transition-colors duration-200">
-              {section}
+      {/* Mobile Menu Bar */}
+      <nav className="fixed bottom-0 left-0 right-0 bg-gray-800 shadow-lg z-50 md:hidden rounded-t-lg">
+        <div className="grid grid-cols-5 gap-2 py-2 px-4">
+          {['home', 'about', 'portfolio', 'projects', 'contact'].map((section) => (
+            <a
+              key={section}
+              href={`#${section}`}
+              onClick={() => scrollToSection(section)}
+              className={`flex flex-col items-center justify-center p-2 rounded-lg text-white hover:bg-indigo-50/10 transition-colors duration-200 ${
+                activeSection === section ? 'font-semibold text-indigo-400 bg-indigo-50/10' : ''
+              }`}
+            >
+              <span className="capitalize text-xs mx-2">{section === 'portfolio' ? 'P' : section}</span>
             </a>
           ))}
         </div>
-      </div>
-
-      {/* Mobile menu */}
-      <div
-        className={`md:hidden fixed inset-0 bg-black bg-opacity-50 transition-opacity duration-300 ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
-      >
-        <div
-          className={`mobile-menu fixed top-0 left-0 w-2/3 h-full bg-secondary p-6 transform transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}
-        >
-          {['home', 'about', 'projects', 'contact'].map((section) => (
-            <a key={section} href={`#${section}`} className="block py-2 text-accent hover:text-primary transition-colors duration-200">
-              {section}
-            </a>
-          ))}
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 };
 
