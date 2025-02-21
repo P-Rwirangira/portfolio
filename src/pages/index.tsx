@@ -3,6 +3,7 @@ import About from '../components/About';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 
 const Portfolio = () => {
   // Projects data
@@ -58,6 +59,7 @@ const Portfolio = () => {
           <Contact />
         </section>
       </main>
+      <Footer />
     </div>
   );
 };
