@@ -2,20 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply bg-white;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .nav-link {
+    @apply text-accent hover:text-primary transition-colors duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-accent text-white px-6 py-2 rounded-lg hover:bg-primary transition duration-300;
+  }
+
+  .section-title {
+    @apply text-4xl font-bold text-center mb-12 text-primary;
+  }
+
+  .card {
+    @apply bg-secondary rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-lg bg-white dark:bg-gray-800 border border-accent focus:outline-none focus:ring-2 focus:ring-primary;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-highlight;
+  }
+
+  .bg-gradient {
+    @apply bg-gradient-to-r from-background to-highlight;
+  }
 }
