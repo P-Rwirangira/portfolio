@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Projects from '../components/Projects';
@@ -6,9 +5,6 @@ import Contact from '../components/Contact';
 import Navigation from '../components/Navigation';
 
 const Portfolio = () => {
-  const [activeSection, setActiveSection] = useState('home');
-  const [menuOpen, setMenuOpen] = useState(false);
-
   // Projects data
   const projects = [
     {
@@ -47,12 +43,20 @@ const Portfolio = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <Navigation activeSection={activeSection} setActiveSection={setActiveSection} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Navigation />
       <main className="pt-16">
-        {activeSection === 'home' && <Hero />}
-        {activeSection === 'about' && <About skills={skills} />}
-        {activeSection === 'projects' && <Projects projects={projects} />}
-        {activeSection === 'contact' && <Contact />}
+        <section id="home">
+          <Hero />
+        </section>
+        <section id="about">
+          <About skills={skills} />
+        </section>
+        <section id="projects">
+          <Projects projects={projects} />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
       </main>
     </div>
   );

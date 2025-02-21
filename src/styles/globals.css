@@ -28,6 +28,34 @@
   .input-field {
     @apply w-full px-4 py-3 rounded-lg bg-white dark:bg-gray-800 border border-accent focus:outline-none focus:ring-2 focus:ring-primary;
   }
+
+  .section {
+    @apply py-20;
+  }
+
+  .container {
+    @apply mx-auto px-4;
+  }
+
+  .form-field {
+    @apply mb-6;
+  }
+
+  .form-label {
+    @apply block text-primary mb-2;
+  }
+
+  .form-input {
+    @apply w-full px-4 py-3 rounded-lg bg-white dark:bg-gray-800 border border-accent focus:outline-none focus:ring-2 focus:ring-primary;
+  }
+
+  .form-textarea {
+    @apply w-full px-4 py-3 rounded-lg bg-white dark:bg-gray-800 border border-accent focus:outline-none focus:ring-2 focus:ring-primary h-32 resize-none;
+  }
+
+  .form-button {
+    @apply btn-primary w-full;
+  }
 }
 
 @layer utilities {
