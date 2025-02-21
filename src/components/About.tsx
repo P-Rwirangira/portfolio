@@ -5,7 +5,7 @@ const About = ({ skills }: { skills: { name: string; level: number }[] }) => (
       <div className="max-w-3xl mx-auto flex flex-col md:flex-row items-center">
         <div className="md:ml-12">
           <p className="text-primary text-lg mb-6">
-            I'm a passionate full-stack developer with 5+ years of experience building web applications.
+            I'm a passionate full-stack developer with 2+ years of experience building web applications.
             I specialize in React, Node.js, and modern web technologies.
           </p>
           <div className="mt-12">
