@@ -37,7 +37,7 @@ const skillCategories = {
   ],
 };
 
-export default function AboutPreview() {
+export default function About({ skills }: { skills: { name: string; level: number; }[] }) {
   const [selectedTab, setSelectedTab] = useState("languages");
 
   return (

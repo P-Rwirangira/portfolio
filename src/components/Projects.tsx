@@ -118,7 +118,7 @@ const ProjectCard = ({ project }: { project: any }) => {
   );
 };
 
-export default function Projects() {
+export default function Projects({ projects }: { projects: { id: number; title: string; description: string; tech: string[]; previewUrl: string; category: string; }[] }) {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
 
