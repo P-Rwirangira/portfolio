@@ -56,7 +56,27 @@
   .form-button {
     @apply btn-primary w-full;
   }
-}
+
+  /* Project card components */
+  .project-card {
+    @apply bg-card rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl;
+  }
+  
+  .project-header {
+    @apply p-6 pb-4 bg-gradient-to-r from-primary/5 to-secondary/5 border-b border-border;
+  }
+  
+  .project-content {
+    @apply p-6;
+  }
+  
+  .project-footer {
+    @apply p-6 pt-0 bg-muted/30;
+  }
+  
+  .tech-badge {
+    @apply text-xs px-2 py-1 rounded-full bg-primary/10 text-primary;
+  }}
 
 @layer utilities {
   .text-gradient {

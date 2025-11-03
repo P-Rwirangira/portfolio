@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react"
 import Image from "next/image"
 import { ShimmerButton } from "./ui/ShimmerButton"
-import { motion } from "framer-motion"
+import { motion, easeOut } from "framer-motion"
 import { FaCode, FaCogs, FaLightbulb } from "react-icons/fa"
 
 const Hero = () => {
@@ -17,12 +17,12 @@ const Hero = () => {
 
   const containerVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: easeOut } }
   }
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
+    visible: { opacity: 1, y: 0 }
   }
 
   return (
