@@ -1,0 +1,204 @@
+{
+  "personal": {
+    "name": "Patrick Rwirangira",
+    "title": "Software Developer",
+    "subtitle": "Full-Stack Engineer",
+    "email": "patrick@example.com",
+    "phone": "+1 (555) 123-4567",
+    "location": "Your City, Country",
+    "avatar": "/media/profile.jpeg",
+    "bio": "Designer, developer, and architect of beautifully simple things with care. Passionate about creating innovative and user-centric digital experiences.",
+    "resumeUrl": "/resume.pdf"
+  },
+  
+  "social": {
+    "github": "https://github.com/patrick-rwirangira",
+    "linkedin": "https://linkedin.com/in/patrick-rwirangira",
+    "twitter": "https://twitter.com/patrick_rwirangira",
+    "email": "mailto:patrick@example.com",
+    "website": "https://your-portfolio-domain.com"
+  },
+  
+  "skills": {
+    "languages": [
+      { "name": "JavaScript", "level": 90, "icon": "SiJavascript" },
+      { "name": "TypeScript", "level": 85, "icon": "SiTypescript" },
+      { "name": "Python", "level": 80, "icon": "SiPython" },
+      { "name": "SQL", "level": 75, "icon": "SiPostgresql" }
+    ],
+    "frontend": [
+      { "name": "React", "level": 88, "icon": "SiReact" },
+      { "name": "Next.js", "level": 85, "icon": "SiNextdotjs" },
+      { "name": "Vue.js", "level": 78, "icon": "SiVuedotjs" },
+      { "name": "Tailwind CSS", "level": 85, "icon": "SiTailwindcss" }
+    ],
+    "backend": [
+      { "name": "Node.js", "level": 85, "icon": "SiNodedotjs" },
+      { "name": "Django", "level": 80, "icon": "SiDjango" },
+      { "name": "Express.js", "level": 78, "icon": "SiExpress" },
+      { "name": "FastAPI", "level": 75, "icon": "SiFastapi" }
+    ],
+    "databases": [
+      { "name": "PostgreSQL", "level": 85, "icon": "SiPostgresql" },
+      { "name": "MySQL", "level": 80, "icon": "SiMysql" },
+      { "name": "MongoDB", "level": 78, "icon": "SiMongodb" },
+      { "name": "Redis", "level": 70, "icon": "SiRedis" }
+    ],
+    "tools": [
+      { "name": "Git", "level": 88, "icon": "SiGit" },
+      { "name": "Docker", "level": 75, "icon": "SiDocker" },
+      { "name": "AWS", "level": 70, "icon": "SiAmazonaws" },
+      { "name": "Figma", "level": 70, "icon": "SiFigma" }
+    ]
+  },
+  
+  "projects": [
+    {
+      "id": 1,
+      "title": "E-commerce Platform",
+      "description": "A full-stack e-commerce solution with modern features including real-time inventory management, secure payment processing, and responsive design.",
+      "longDescription": "This comprehensive e-commerce platform was built to handle high-traffic scenarios with a focus on performance and user experience. Features include user authentication, product catalog management, shopping cart functionality, order processing, and admin dashboard.",
+      "tech": ["React", "Node.js", "MongoDB", "Stripe", "Redux", "Express"],
+      "previewUrl": "https://placehold.co/600x400",
+      "category": "Web Development",
+      "githubUrl": "https://github.com/patrick/ecommerce-platform",
+      "liveUrl": "https://ecommerce-demo.example.com",
+      "timeline": "3 months",
+      "teamSize": 1,
+      "features": [
+        "User authentication and authorization",
+        "Product catalog with search and filtering",
+        "Shopping cart and checkout process",
+        "Payment integration with Stripe",
+        "Order management and tracking",
+        "Admin dashboard for inventory management",
+        "Responsive design for all devices"
+      ],
+      "challenges": [
+        "Implementing real-time inventory updates",
+        "Optimizing database queries for product search",
+        "Ensuring secure payment processing"
+      ],
+      "images": [
+        "https://placehold.co/400x300",
+        "https://placehold.co/400x300",
+        "https://placehold.co/400x300"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Task Management App",
+      "description": "Collaborative task manager with real-time updates, team collaboration features, and intuitive project organization.",
+      "longDescription": "A comprehensive project management solution designed for teams of all sizes. Built with real-time collaboration in mind, featuring instant updates, file sharing, and advanced project tracking capabilities.",
+      "tech": ["Next.js", "Firebase", "Tailwind CSS", "Framer Motion", "TypeScript"],
+      "previewUrl": "https://placehold.co/600x400",
+      "category": "Productivity",
+      "githubUrl": "https://github.com/patrick/task-manager",
+      "liveUrl": "https://taskmanager-demo.example.com",
+      "timeline": "2 months",
+      "teamSize": 2,
+      "features": [
+        "Real-time collaboration",
+        "Project and task organization",
+        "File sharing and comments",
+        "Time tracking and reporting",
+        "Team member management",
+        "Drag-and-drop interface",
+        "Mobile-responsive design"
+      ],
+      "challenges": [
+        "Implementing real-time synchronization",
+        "Optimizing performance for large datasets",
+        "Creating intuitive user interface"
+      ],
+      "images": [
+        "https://placehold.co/400x300",
+        "https://placehold.co/400x300"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Social Media Dashboard",
+      "description": "Analytics dashboard for social media metrics with data visualization, automated reporting, and multi-platform integration.",
+      "longDescription": "A powerful analytics platform that aggregates data from multiple social media platforms, providing comprehensive insights through interactive charts and automated reporting features.",
+      "tech": ["React", "D3.js", "Material UI", "Python", "Django", "PostgreSQL"],
+      "previewUrl": "https://placehold.co/600x400",
+      "category": "Analytics",
+      "githubUrl": "https://github.com/patrick/social-dashboard",
+      "liveUrl": "https://socialdash-demo.example.com",
+      "timeline": "4 months",
+      "teamSize": 3,
+      "features": [
+        "Multi-platform social media integration",
+        "Interactive data visualizations",
+        "Automated report generation",
+        "Custom dashboard creation",
+        "Export functionality",
+        "Real-time data updates",
+        "User role management"
+      ],
+      "challenges": [
+        "Integrating multiple social media APIs",
+        "Creating responsive data visualizations",
+        "Handling large datasets efficiently"
+      ],
+      "images": [
+        "https://placehold.co/400x300",
+        "https://placehold.co/400x300",
+        "https://placehold.co/400x300",
+        "https://placehold.co/400x300"
+      ]
+    }
+  ],
+  
+  "experience": [
+    {
+      "title": "Senior Full-Stack Developer",
+      "company": "Tech Innovations Inc.",
+      "period": "2022 - Present",
+      "description": "Leading development of scalable web applications using modern technologies. Mentoring junior developers and establishing best practices.",
+      "achievements": [
+        "Reduced application load time by 40%",
+        "Led team of 5 developers",
+        "Implemented CI/CD pipeline"
+      ]
+    },
+    {
+      "title": "Full-Stack Developer",
+      "company": "Digital Solutions Ltd.",
+      "period": "2020 - 2022",
+      "description": "Developed and maintained multiple client projects using React, Node.js, and various databases.",
+      "achievements": [
+        "Delivered 15+ successful projects",
+        "Improved code quality through testing",
+        "Collaborated with design teams"
+      ]
+    }
+  ],
+  
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "school": "University of Technology",
+      "period": "2016 - 2020",
+      "description": "Graduated with honors. Focused on software engineering and web development."
+    }
+  ],
+  
+  "testimonials": [
+    {
+      "name": "Sarah Johnson",
+      "role": "Project Manager",
+      "company": "Tech Innovations Inc.",
+      "content": "Patrick is an exceptional developer with a keen eye for detail. His ability to translate complex requirements into elegant solutions is remarkable.",
+      "avatar": "https://placehold.co/100x100"
+    },
+    {
+      "name": "Michael Chen",
+      "role": "Lead Designer",
+      "company": "Creative Agency",
+      "content": "Working with Patrick was a pleasure. He brings both technical expertise and creative problem-solving to every project.",
+      "avatar": "https://placehold.co/100x100"
+    }
+  ]
+}

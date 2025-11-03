@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { analytics } from '../lib/analytics';
 
 const Navigation = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -26,6 +27,14 @@ const Navigation = () => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+      analytics.trackNavigation(id);
+    }
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent, id: string) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      scrollToSection(id);
     }
   };
 

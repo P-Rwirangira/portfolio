@@ -1,9 +1,17 @@
-import Hero from '../components/Hero';
-import About from '../components/About';
-import Projects from '../components/Projects';
-import Contact from '../components/Contact';
+import { lazy, Suspense } from 'react';
 import Navigation from '../components/Navigation';
-import Footer from '../components/Footer';
+import Hero from '../components/Hero';
+import ScrollProgress from '../components/ui/ScrollProgress';
+import ThemeToggle from '../components/ui/ThemeToggle';
+import FloatingActionButton from '../components/ui/FloatingActionButton';
+import SEOHead from '../components/SEOHead';
+import SkipToContent from '../components/SkipToContent';
+
+// Lazy load components for better performance
+const About = lazy(() => import('../components/About'));
+const Projects = lazy(() => import('../components/Projects'));
+const Contact = lazy(() => import('../components/Contact'));
+const Footer = lazy(() => import('../components/Footer'));
 
 const Portfolio = () => {
   // Projects data
@@ -43,24 +51,45 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
-      <Navigation />
-      <main className="pt-16">
+    <>
+      <SEOHead 
+        title="Patrick Rwirangira - Software Developer & Full-Stack Engineer"
+        description="Passionate full-stack developer specializing in modern web technologies. Building elegant, efficient, and user-friendly applications with React, Next.js, Node.js, and more."
+        keywords="Patrick Rwirangira, software developer, full-stack engineer, web development, React, Next.js, Node.js, TypeScript, JavaScript, portfolio"
+        ogUrl="https://your-portfolio-domain.com"
+        canonicalUrl="https://your-portfolio-domain.com"
+      />
+      <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
+        <SkipToContent />
+        <ScrollProgress />
+        <ThemeToggle />
+        <FloatingActionButton />
+        <Navigation />
+      <main id="main-content" className="pt-16" tabIndex={-1}>
         <section id="home">
           <Hero />
         </section>
-        <section id="about">
-          <About skills={skills} />
-        </section>
-        <section id="projects">
-          <Projects projects={projects} />
-        </section>
-        <section id="contact">
-          <Contact />
-        </section>
+        <Suspense fallback={<div className="flex items-center justify-center py-20"><div className="w-8 h-8 border-4 border-primary border-t-transparent rounded-full animate-spin"></div></div>}>
+          <section id="about">
+            <About skills={skills} />
+          </section>
+        </Suspense>
+        <Suspense fallback={<div className="flex items-center justify-center py-20"><div className="w-8 h-8 border-4 border-primary border-t-transparent rounded-full animate-spin"></div></div>}>
+          <section id="projects">
+            <Projects projects={projects} />
+          </section>
+        </Suspense>
+        <Suspense fallback={<div className="flex items-center justify-center py-20"><div className="w-8 h-8 border-4 border-primary border-t-transparent rounded-full animate-spin"></div></div>}>
+          <section id="contact">
+            <Contact />
+          </section>
+        </Suspense>
       </main>
-      <Footer />
-    </div>
+        <Suspense fallback={<div className="flex items-center justify-center py-20"><div className="w-8 h-8 border-4 border-primary border-t-transparent rounded-full animate-spin"></div></div>}>
+          <Footer />
+        </Suspense>
+      </div>
+    </>
   );
 };
 
