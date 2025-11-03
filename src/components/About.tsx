@@ -47,7 +47,7 @@ export default function About({ skills }: { skills: { name: string; level: numbe
           <h1 className="text-4xl font-bold mb-6 text-gray-900">About Me</h1>
           <p className="text-xl text-gray-600">
             I'm a passionate full-stack developer with a focus on creating elegant,
-            efficient, and user-friendly applications. With over 2 years of experience,
+            efficient, and user-friendly applications. With over 3 years of experience,
             I specialize in modern web technologies and best practices.
           </p>
         </div>

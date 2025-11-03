@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react"
 import Image from "next/image"
 import { ShimmerButton } from "./ui/ShimmerButton"
-import { motion } from "framer-motion"
+import { motion, easeOut } from "framer-motion"
 import { FaCode, FaCogs, FaLightbulb } from "react-icons/fa"
 
 const Hero = () => {
@@ -17,12 +17,12 @@ const Hero = () => {
 
   const containerVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: easeOut } }
   }
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
+    visible: { opacity: 1, y: 0 }
   }
 
   return (
@@ -38,7 +38,7 @@ const Hero = () => {
             Hey, I'm Patrick Rwirangira.
           </motion.h1>
           <motion.h2 className="text-3xl sm:text-4xl md:text-5xl text-primary font-medium mb-6" variants={itemVariants}>
-            A Software Developer
+            A Software Engineer
           </motion.h2>
           <motion.p className="text-primary text-lg sm:text-xl max-w-2xl mx-auto mb-12" variants={itemVariants}>
             Designer, developer, and architect of beautifully simple things with care. Passionate about creating
@@ -57,7 +57,7 @@ const Hero = () => {
             />
           </motion.div>
           <motion.div className="flex justify-center space-x-4 mb-16" variants={itemVariants}>
-            <a href="mailto:your-email@example.com">
+            <a href="mailto:rwpatrick001@gmail.com">
               <ShimmerButton
                 className="px-6 py-3 text-lg bg-primary text-primary-foreground rounded-lg shadow-lg hover:bg-primary/90 transition-colors"
                 shimmerColor={shimmerColor}
@@ -68,7 +68,6 @@ const Hero = () => {
           </motion.div>
         </motion.div>
       </motion.div>
-      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-background to-highlight opacity-50 z-0"></div>
       <PortfolioIntro />
     </div>
   )

@@ -164,7 +164,7 @@ const Contact = () => {
                 />
                 <SocialLink 
                   icon={Linkedin} 
-                  href="https://linkedin.com/in/yourusername" 
+                  href="https://linkedin.com/in/rwpatrick" 
                   label="LinkedIn Profile"
                 />
                 <SocialLink 

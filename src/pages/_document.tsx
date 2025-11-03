@@ -9,6 +9,13 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
             rel="stylesheet"
           />
+          {/* Favicon configuration */}
+          <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/media/profile.jpeg" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/media/profile.jpeg" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/media/profile.jpeg" />
+          <link rel="manifest" href="/site.webmanifest" />
+          <meta name="theme-color" content="#000000" />
         </Head>
         <body>
           <Main />
