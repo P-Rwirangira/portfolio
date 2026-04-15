@@ -1,8 +1,16 @@
-import React, { useState } from 'react';
-import Card from './Card';
-import CardContent from './CardContent';
+import React, { useState } from "react";
+import Card from "./Card";
+import CardContent from "./CardContent";
 
-const SkillCard = ({ skill }: { skill: { name: string, icon: React.ComponentType<{ className?: string }>, level: number } }) => {
+const SkillCard = ({
+  skill,
+}: {
+  skill: {
+    name: string;
+    icon: React.ComponentType<{ className?: string }>;
+    level: number;
+  };
+}) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -13,15 +21,15 @@ const SkillCard = ({ skill }: { skill: { name: string, icon: React.ComponentType
     >
       <Card className="p-4 hover:shadow-lg transition-all duration-300">
         <CardContent className="flex flex-col items-center space-y-4">
-          <skill.icon className="w-12 h-12 text-[#1d2d43]" />
+          <skill.icon className="w-12 h-12 text-primary" />
           <h3 className="font-medium">{skill.name}</h3>
-          <div className="w-full bg-gray-200 rounded-full h-2">
+          <div className="w-full bg-secondary rounded-full h-2">
             <div
-              className="bg-[#1d2d43] h-2 rounded-full transition-all duration-800"
+              className="bg-primary h-2 rounded-full transition-all duration-800"
               style={{ width: isHovered ? `${skill.level}%` : "0%" }}
             />
           </div>
-          <span className="text-sm text-gray-600">
+          <span className="text-sm text-muted-foreground">
             {isHovered ? `${skill.level}%` : "Hover to see proficiency"}
           </span>
         </CardContent>

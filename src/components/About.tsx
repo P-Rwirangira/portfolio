@@ -1,11 +1,28 @@
-import React, { useState } from 'react';
-import { SiJavascript, SiTypescript, SiPython, SiReact, SiNextdotjs, SiNodedotjs, SiDjango, SiExpress, SiPostgresql, SiMysql, SiMongodb, SiSqlite, SiGit, SiDocker, SiJest, SiFigma } from "react-icons/si";
-import Card from './Card';
-import CardContent from './CardContent';
-import TabsList from './TabsList';
-import TabsTrigger from './TabsTrigger';
-import TabsContent from './TabsContent';
-import SkillCard from './SkillCard';
+import React, { useState } from "react";
+import {
+  SiJavascript,
+  SiTypescript,
+  SiPython,
+  SiReact,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiDjango,
+  SiExpress,
+  SiPostgresql,
+  SiMysql,
+  SiMongodb,
+  SiSqlite,
+  SiGit,
+  SiDocker,
+  SiJest,
+  SiFigma,
+} from "react-icons/si";
+import Card from "./Card";
+import CardContent from "./CardContent";
+import TabsList from "./TabsList";
+import TabsTrigger from "./TabsTrigger";
+import TabsContent from "./TabsContent";
+import SkillCard from "./SkillCard";
 
 const skillCategories = {
   languages: [
@@ -37,18 +54,23 @@ const skillCategories = {
   ],
 };
 
-export default function About({ skills }: { skills: { name: string; level: number; }[] }) {
+export default function About({
+  skills,
+}: {
+  skills: { name: string; level: number }[];
+}) {
   const [selectedTab, setSelectedTab] = useState("languages");
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12">
+    <div className="min-h-screen bg-background py-12">
       <section className="max-w-6xl mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <h1 className="text-4xl font-bold mb-6 text-gray-900">About Me</h1>
-          <p className="text-xl text-gray-600">
-            I'm a passionate full-stack developer with a focus on creating elegant,
-            efficient, and user-friendly applications. With over 3 years of experience,
-            I specialize in modern web technologies and best practices.
+          <h1 className="text-4xl font-bold mb-6 text-foreground">About Me</h1>
+          <p className="text-xl text-muted-foreground">
+            I'm a passionate full-stack developer with a focus on creating
+            elegant, efficient, and user-friendly applications. With over 3
+            years of experience, I specialize in modern web technologies and
+            best practices.
           </p>
         </div>
 
@@ -67,7 +89,11 @@ export default function About({ skills }: { skills: { name: string; level: numbe
           </TabsList>
 
           {Object.entries(skillCategories).map(([category, skills]) => (
-            <TabsContent key={category} value={category} selectedTab={selectedTab}>
+            <TabsContent
+              key={category}
+              value={category}
+              selectedTab={selectedTab}
+            >
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {skills.map((skill) => (
                   <SkillCard key={skill.name} skill={skill} />

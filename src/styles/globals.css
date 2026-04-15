@@ -3,113 +3,169 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply bg-white;
-  }
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 230 30% 15%;
+        --card: 0 0% 100%;
+        --card-foreground: 230 30% 15%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 230 30% 15%;
+        --primary: 215 40% 19%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 230 20% 94%;
+        --secondary-foreground: 230 30% 15%;
+        --muted: 230 20% 94%;
+        --muted-foreground: 230 15% 45%;
+        --accent: 230 20% 94%;
+        --accent-foreground: 230 30% 15%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 210 40% 98%;
+        --border: 230 20% 90%;
+        --input: 230 20% 90%;
+        --ring: 243 75% 59%;
+        --radius: 0.5rem;
+    }
+
+    .dark {
+        --background: 235 24% 9%;
+        --foreground: 214 32% 91%;
+        --card: 235 24% 12%;
+        --card-foreground: 214 32% 91%;
+        --popover: 235 24% 12%;
+        --popover-foreground: 214 32% 91%;
+        --primary: 215 40% 19%;
+        --primary-foreground: 210 40% 98%;
+        --secondary: 235 24% 18%;
+        --secondary-foreground: 214 32% 91%;
+        --muted: 235 24% 18%;
+        --muted-foreground: 215 20% 65%;
+        --accent: 235 24% 18%;
+        --accent-foreground: 214 32% 91%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 210 40% 98%;
+        --border: 235 24% 20%;
+        --input: 235 24% 20%;
+        --ring: 243 75% 59%;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+    }
 }
 
 @layer components {
-  .nav-link {
-    @apply text-accent hover:text-primary transition-colors duration-200;
-  }
+    .nav-link {
+        @apply text-accent hover:text-primary transition-colors duration-200;
+    }
 
-  .btn-primary {
-    @apply bg-accent text-white px-6 py-2 rounded-lg hover:bg-primary transition duration-300;
-  }
+    .btn-primary {
+        @apply bg-accent text-white px-6 py-2 rounded-lg hover:bg-primary transition duration-300;
+    }
 
-  .section-title {
-    @apply text-4xl font-bold text-center mb-12 text-primary;
-  }
+    .section-title {
+        @apply text-4xl font-bold text-center mb-12 text-primary;
+    }
 
-  .card {
-    @apply bg-secondary rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300;
-  }
+    .card {
+        @apply bg-secondary rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300;
+    }
 
-  .input-field {
-    @apply w-full px-4 py-3 rounded-lg bg-white dark:bg-gray-800 border border-accent focus:outline-none focus:ring-2 focus:ring-primary;
-  }
+    .input-field {
+        @apply w-full px-4 py-3 rounded-lg bg-background border border-accent focus:outline-none focus:ring-2 focus:ring-primary;
+    }
 
-  .section {
-    @apply py-20;
-  }
+    .section {
+        @apply py-20;
+    }
 
-  .container {
-    @apply mx-auto px-4;
-  }
+    .container {
+        @apply mx-auto px-4;
+    }
 
-  .form-field {
-    @apply mb-6;
-  }
+    .form-field {
+        @apply mb-6;
+    }
 
-  .form-label {
-    @apply block text-primary mb-2;
-  }
+    .form-label {
+        @apply block text-primary mb-2;
+    }
 
-  .form-input {
-    @apply w-full px-4 py-3 rounded-lg bg-white dark:bg-gray-800 border border-accent focus:outline-none focus:ring-2 focus:ring-primary;
-  }
+    .form-input {
+        @apply w-full px-4 py-3 rounded-lg bg-background border border-accent focus:outline-none focus:ring-2 focus:ring-primary;
+    }
 
-  .form-textarea {
-    @apply w-full px-4 py-3 rounded-lg bg-white dark:bg-gray-800 border border-accent focus:outline-none focus:ring-2 focus:ring-primary h-32 resize-none;
-  }
+    .form-textarea {
+        @apply w-full px-4 py-3 rounded-lg bg-background border border-accent focus:outline-none focus:ring-2 focus:ring-primary h-32 resize-none;
+    }
 
-  .form-button {
-    @apply btn-primary w-full;
-  }
+    .form-button {
+        @apply btn-primary w-full;
+    }
 
-  /* Project card components */
-  .project-card {
-    @apply bg-card rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl;
-  }
-  
-  .project-header {
-    @apply p-6 pb-4 bg-gradient-to-r from-primary/5 to-secondary/5 border-b border-border;
-  }
-  
-  .project-content {
-    @apply p-6;
-  }
-  
-  .project-footer {
-    @apply p-6 pt-0 bg-muted/30;
-  }
-  
-  .tech-badge {
-    @apply text-xs px-2 py-1 rounded-full bg-primary/10 text-primary;
-  }}
+    /* Project card components */
+    .project-card {
+        @apply bg-card rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl;
+    }
+
+    .project-header {
+        @apply p-6 pb-4 bg-gradient-to-r from-primary/5 to-secondary/5 border-b border-border;
+    }
+
+    .project-content {
+        @apply p-6;
+    }
+
+    .project-footer {
+        @apply p-6 pt-0 bg-muted/30;
+    }
+
+    .tech-badge {
+        @apply text-xs px-2 py-1 rounded-full bg-primary/10 text-primary;
+    }
+}
 
 @layer utilities {
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-highlight;
-  }
+    .text-gradient {
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-highlight;
+    }
 
-  .bg-gradient {
-    @apply bg-gradient-to-r from-background to-highlight;
-  }
+    .bg-gradient {
+        @apply bg-gradient-to-r from-background to-highlight;
+    }
 }
 
 .shimmer {
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5));
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.5)
+    );
 }
 
 .shimmer::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5));
-  animation: shimmer 2s infinite;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.5)
+    );
+    animation: shimmer 2s infinite;
 }
 
 @keyframes shimmer {
-  0% {
-    left: -100%;
-  }
-  100% {
-    left: 100%;
-  }
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
 }
