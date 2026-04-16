@@ -11,7 +11,7 @@ export const personalInfo = {
   age: new Date().getFullYear() - 1995,
   nationality: 'Rwandan',
   location: 'Kigali, Rwanda',
-  phone: '',
+  phone: '+250 783 992 155',
   email: 'rwpatrick001@gmail.com',
   openToWork: true,
   languages: 'English',
@@ -27,78 +27,84 @@ export const aboutData = {
     nationality: 'Rwandan',
     openToWork: 'Yes',
     languages: 'English - Kinyarwanda',
-    address: 'Kigali - Rwanda',
-    phone: '0783992155',
+    address: 'Kigali, Rwanda',
+    phone: '+250 783 992 155',
     email: 'rwpatrick001@gmail.com',
     social: {
       github: {
-        url: 'https://github.com/p-rwirangira',
-        username: 'Rwirangira',
+        url: 'https://github.com/P-Rwirangira',
+        username: 'P-Rwirangira',
       },
-      // linkedin: {
-      //   url: 'https://www.linkedin.com/in/rwirangira/',
-      //   username: 'linkedin',
-      // },
     },
     image: '/media/profile.jpeg',
   },
   skills: [
     // Languages
-    { icon: 'ri-javascript-fill', name: 'JavaScript' },
+    { icon: 'fa-brands fa-rust', name: 'Rust' },
     { icon: 'ri-braces-fill', name: 'TypeScript' },
+    { icon: 'ri-javascript-fill', name: 'JavaScript' },
     { icon: 'ri-terminal-box-fill', name: 'Python' },
-    { icon: 'ri-file-code-fill', name: 'Solidity' }, 
+    { icon: 'ri-file-code-fill', name: 'Solidity' },
+    { icon: 'ri-database-2-fill', name: 'SQL' },
+    { icon: 'devicon-bash-plain', name: 'Bash' },
     { icon: 'ri-html5-fill', name: 'HTML5' },
     { icon: 'ri-css3-fill', name: 'CSS3' },
-    { icon: 'ri-database-2-fill', name: 'SQL' }, 
 
-    // Backend
+    // Systems & Web3 / Blockchain
+    { icon: 'ri-cpu-line', name: 'Tokio' },
+    { icon: 'ri-rocket-line', name: 'Actix' },
+    { icon: 'ri-shield-keyhole-line', name: 'Alloy' },
+    { icon: 'ri-eth-line', name: 'REVM' },
+    { icon: 'ri-broadcast-line', name: 'WebSockets' },
+    { icon: 'ri-cpu-fill', name: 'EVM Simulation' },
+    { icon: 'ri-eth-fill', name: 'Ethereum' },
+    { icon: 'ri-base-station-fill', name: 'Base' },
+    { icon: 'fa-solid fa-hard-hat', name: 'Hardhat' },
+    { icon: 'ri-braces-line', name: 'ethers.js' },
+    { icon: 'ri-shield-check-fill', name: 'OpenZeppelin' },
+    { icon: 'ri-exchange-funds-fill', name: 'Uniswap' },
+    { icon: 'ri-safe-2-fill', name: 'Aave' },
+    { icon: 'ri-robot-2-fill', name: 'Flashbots' },
+
+    // Backend & APIs
     { icon: 'ri-server-fill', name: 'Node.js' },
     { icon: 'ri-window-fill', name: 'Express.js' },
     { icon: 'ri-layout-grid-fill', name: 'NestJS' },
+    { icon: 'ri-flashlight-line', name: 'FastAPI' },
 
     // Frontend
     { icon: 'ri-reactjs-fill', name: 'React' },
+    { icon: 'ri-global-fill', name: 'Next.js' },
     { icon: 'ri-shape-2-fill', name: 'Redux' },
     { icon: 'ri-paint-brush-fill', name: 'Tailwind CSS' },
-    { icon: 'ri-global-fill', name: 'Next.js' },
 
-    // Database
+    // Databases & Cache
     { icon: 'ri-database-fill', name: 'PostgreSQL' },
-    { icon: 'ri-database-line', name: 'MySQL' },
+    { icon: 'devicon-redis-plain', name: 'Redis' },
     { icon: 'ri-leaf-fill', name: 'MongoDB' },
+    { icon: 'ri-database-line', name: 'MySQL' },
 
-    // Data Science
-    { icon: 'ri-bar-chart-box-fill', name: 'NumPy' }, 
-    { icon: 'ri-table-fill', name: 'Pandas' }, 
-    { icon: 'ri-line-chart-fill', name: 'Matplotlib' }, 
-    { icon: 'ri-pie-chart-2-fill', name: 'Seaborn' }, 
+    // Testing & Reliability
+    { icon: 'devicon-jest-plain', name: 'Jest' },
+    { icon: 'ri-test-tube-line', name: 'Pytest' },
 
-    // Payments
-    { icon: 'ri-bank-card-fill', name: 'Stripe' }, 
-    { icon: 'ri-paypal-fill', name: 'PayPal' }, 
-
-    // DevOps & Infrastructure
+    // DevOps & Cloud
     { icon: 'ri-ship-fill', name: 'Docker' },
+    { icon: 'devicon-linux-plain', name: 'Linux' },
+    { icon: 'devicon-nginx-original', name: 'Nginx' },
     { icon: 'ri-git-branch-fill', name: 'Git' },
-    { icon: 'ri-github-fill', name: 'CI/CD' },
-    { icon: 'ri-send-plane-fill', name: 'Postman' }, 
+    { icon: 'ri-github-fill', name: 'GitHub Actions' },
+    { icon: 'devicon-circleci-plain', name: 'CircleCI' },
+    { icon: 'ri-refresh-line', name: 'CI/CD' },
+    { icon: 'ri-send-plane-fill', name: 'Postman' },
 
-    // Blockchain & Web3
-    { icon: 'ri-links-fill', name: 'Solidity' }, 
-    { icon: 'ri-hard-hat-fill', name: 'Hardhat' }, 
-    { icon: 'ri-braces-line', name: 'ethers.js' }, 
-    { icon: 'ri-shield-check-fill', name: 'OpenZeppelin' }, 
-
-    // Blockchain Platforms
-    { icon: 'ri-eth-fill', name: 'Ethereum' },
-    { icon: 'ri-base-station-fill', name: 'Base' }, 
-    // { icon: 'ri-polygon-fill', name: 'Polygon' }, 
-
-    // DeFi Protocols
-    { icon: 'ri-exchange-funds-fill', name: 'Uniswap' }, 
-    { icon: 'ri-safe-2-fill', name: 'Aave' }, 
-    { icon: 'ri-robot-2-fill', name: 'Flashbots' }, 
+    // Data Science & Payments
+    { icon: 'ri-bar-chart-box-fill', name: 'NumPy' },
+    { icon: 'ri-table-fill', name: 'Pandas' },
+    { icon: 'ri-line-chart-fill', name: 'Matplotlib' },
+    { icon: 'ri-pie-chart-2-fill', name: 'Seaborn' },
+    { icon: 'ri-bank-card-fill', name: 'Stripe' },
+    { icon: 'ri-paypal-fill', name: 'PayPal' },
   ],
   experience: [
     {
@@ -109,19 +115,19 @@ export const aboutData = {
     },
     {
       title: 'Senior Full-Stack Developer',
-      period: 'July 2025 - Jan 2026',
+      period: 'Sep 2025 - Apr 2026',
       company: 'Ubaka Inc.',
       type: 'experience',
     },
     {
       title: 'Software Engineer',
-      period: 'Jan 2023 - June 2024',
+      period: 'Aug 2024 - Aug 2025',
       company: 'Chafetz.',
       type: 'experience',
     },
     {
       title: 'Software Engineer Alumni',
-      period: 'Nov 2021 - Dec 2022',
+      period: 'Jan 2023 - Jul 2023',
       company: 'Andela',
       type: 'experience',
     },
@@ -157,24 +163,24 @@ export const blogs = [
   },
 ];
 
-
 export const projectsData = [
   {
-    title: 'Lund Peace Foundation',
+    title: 'Lund Peace Foundation Inc .',
     type: 'gallery',
     images: ['assets/lunds1.png', 'assets/lunds2.png'],
-    project: 'Website',
+    project: 'Foundation Website',
     client: 'Lund Peace Foundation Inc',
     duration: 'Ongoing',
-    link: 'https://lundspeacefoundation.vercel.app',
+    link: 'https://lundpeacefoundation.netlify.app',
   },
   {
-    title: 'Ubaka Inc',
+    title: 'Ubaka Inc .',
     type: 'gallery',
     images: ['assets/ubaka1.png', 'assets/ubaka2.png'],
-    project: 'Web Application',
+    project: 'Architecture Market place',
     client: 'Ubaka Inc',
-    duration: 'Done',
-    link: 'https://zippy-crepe-15fe7b.netlify.app/',
-  }
+    duration: 'Sep 2025 - Apr 2026',
+    frameworks: 'TypeScript, Node.js, PostgreSQL, Docker',
+    link: 'https://ubaka-ink.netlify.app/',
+  },
 ];

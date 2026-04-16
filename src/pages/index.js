@@ -27,7 +27,7 @@ const Index = () => {
         </title>
         <meta
           name='description'
-          content='Senior Full-Stack Developer wtih 3+ years experience in React.js, Next.js, Node.js, Python, FastAPI, and AWS. Based in Kigali, Rwanda. Mentored 100+ developers, built applications for 10,000+ users.'
+          content='Senior Software Engineer wtih 3+ years experience in React.js, Next.js, Node.js, Python, FastAPI, and AWS. Based in Kigali, Rwanda. Mentored 100+ developers, built applications for 10,000+ users.'
         />
         <meta
           name='keywords'
@@ -44,7 +44,7 @@ const Index = () => {
         />
         <meta
           property='og:description'
-          content='Senior Full-Stack Developer wtih 3+ years experience building scalable applications across healthcare, fintech, and enterprise sectors. Advanced in React, Node.js, Python, and cloud technologies.'
+          content='Senior Full-Stack Developer with experience building scalable applications across healthcare, fintech, and enterprise sectors.'
         />
         <meta property='og:url' content='https://rwpatrick.netlify.app/' />
         <meta property='og:site_name' content='Patrick Rwirangira Portfolio' />
@@ -57,7 +57,7 @@ const Index = () => {
         />
         <meta
           name='twitter:description'
-          content='8+ years building scalable web applications with React, Node.js, Python. Technical mentor and team lead.'
+          content='3+ years building scalable web applications with React, Next.js, Node.js, Python, and cloud systems.'
         />
 
         {/* Additional SEO */}
@@ -75,7 +75,7 @@ const Index = () => {
               'name': 'Patrick Rwirangira',
               'jobTitle': 'Senior Full-Stack Developer',
               'description':
-                'Senior Full-Stack Developer wtih 3+ years of experience in JavaScript, Python, and cloud technologies',
+                'Senior Full-Stack Developer with 3+ years of experience in React.js, Next.js, Node.js, Python, and cloud technologies',
               'url': 'https://rwpatrick.netlify.app/',
               'email': 'rwpatrick001@gmail.com',
               'telephone': '+250783992155',
@@ -85,23 +85,29 @@ const Index = () => {
                 'addressCountry': 'Rwanda',
               },
               'sameAs': [
-                'https://github.com/p-rwirangira',
+                'https://github.com/P-Rwirangira',
                 'https://www.linkedin.com/in/p-rwirangira-Rwirangira-816549111/',
               ],
               'knowsAbout': [
                 'React.js',
                 'Next.js',
-                'Node.js',
-                'Python',
-                'FastAPI',
-                'JavaScript',
+                'Rust',
                 'TypeScript',
-                'AWS',
-                'Google Cloud Platform',
-                'MongoDB',
+                'JavaScript',
+                'Python',
+                'Tokio',
+                'Actix',
+                'Alloy',
+                'REVM',
+                'Node.js',
+                'Express',
+                'NestJS',
+                'FastAPI',
                 'PostgreSQL',
+                'Redis',
+                'MongoDB',
                 'Docker',
-                'Kubernetes',
+                'Linux',
               ],
             }),
           }}

@@ -1,4 +1,5 @@
 import Preloader from '../components/Preloader';
+import ThemeSwitcher from '../components/ThemeSwitcher';
 import { Fragment } from 'react';
 
 import '../styles/globals.css';
@@ -15,6 +16,7 @@ const App = ({ Component, pageProps }) => {
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       </Head>
       <Preloader />
+      <ThemeSwitcher />
       <Component {...pageProps} />
           </Fragment>
   );
