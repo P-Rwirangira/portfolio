@@ -9,7 +9,7 @@ const Testimonials = () => {
           <div>
             <p>
               <span className='quote'>
-                "I worked with John, he was very helpful and fast to respond to
+                "I worked with Patrick, he was very helpful and fast to respond to
                 my inquiry to help with frontend development issues and all
                 related technical problems."
               </span>
@@ -24,7 +24,7 @@ const Testimonials = () => {
           <div>
             <p>
               <span className='quote'>
-                "Working with John transformed our digital presence. He created
+                "Working with Patrick transformed our digital presence. He created
                 solutions that improved efficiency and ensured our platform
                 remained polished, professional, and aligned with our brand."
               </span>
@@ -39,7 +39,7 @@ const Testimonials = () => {
           <div>
             <p>
               <span className='quote'>
-                "John built a platform that streamlined how we operate. His
+                "Patrick built a platform that streamlined how we operate. His
                 skill, professionalism, and ongoing support have been invaluable
                 in keeping our systems reliable and effective."
               </span>
@@ -54,7 +54,7 @@ const Testimonials = () => {
           <div>
             <p>
               <span className='quote'>
-                "John understood our vision from the start and delivered a
+                "Patrick understood our vision from the start and delivered a
                 website that reflects our values perfectly. His creativity,
                 reliability, and technical expertise set him apart."
               </span>

@@ -23,7 +23,7 @@ const Index = () => {
     <Fragment>
       <Head>
         <title>
-          John Niyontwali - Senior Full-Stack Developer | React, Node.js, Python
+          Patrick Rwirangira - Senior Full-Stack Developer | React, Node.js, Python
         </title>
         <meta
           name='description'
@@ -31,29 +31,29 @@ const Index = () => {
         />
         <meta
           name='keywords'
-          content='John Niyontwali, Senior Full-Stack Developer, React.js, Next.js, Node.js, Python, FastAPI, JavaScript, TypeScript, AWS, GCP, Software Engineer, Kigali Rwanda, Technical Mentor, Andela, WelTel, Springboard'
+          content='Patrick Rwirangira, Senior Full-Stack Developer, React.js, Next.js, Node.js, Python, FastAPI, JavaScript, TypeScript, AWS, GCP, Software Engineer, Kigali Rwanda, Technical Mentor, Andela, WelTel, Springboard'
         />
-        <meta name='author' content='John Niyontwali' />
+        <meta name='author' content='Patrick Rwirangira' />
         <meta name='robots' content='index, follow' />
 
         {/* Open Graph / Facebook */}
         <meta property='og:type' content='website' />
         <meta
           property='og:title'
-          content='John Niyontwali - Senior Full-Stack Developer | React, Node.js, Python'
+          content='Patrick Rwirangira - Senior Full-Stack Developer | React, Node.js, Python'
         />
         <meta
           property='og:description'
           content='Senior Full-Stack Developer with 8+ years experience building scalable applications across healthcare, fintech, and enterprise sectors. Advanced in React, Node.js, Python, and cloud technologies.'
         />
-        <meta property='og:url' content='https://nijohn.vercel.app/' />
-        <meta property='og:site_name' content='John Niyontwali Portfolio' />
+        <meta property='og:url' content='https://niPatrick.vercel.app/' />
+        <meta property='og:site_name' content='Patrick Rwirangira Portfolio' />
 
         {/* Twitter */}
         <meta name='twitter:card' content='summary_large_image' />
         <meta
           name='twitter:title'
-          content='John Niyontwali - Senior Full-Stack Developer'
+          content='Patrick Rwirangira - Senior Full-Stack Developer'
         />
         <meta
           name='twitter:description'
@@ -63,7 +63,7 @@ const Index = () => {
         {/* Additional SEO */}
         <meta name='geo.region' content='RW-01' />
         <meta name='geo.placename' content='Kigali, Rwanda' />
-        <link rel='canonical' href='https://nijohn.vercel.app/' />
+        <link rel='canonical' href='https://niPatrick.vercel.app/' />
 
         {/* Structured Data */}
         <script
@@ -72,21 +72,21 @@ const Index = () => {
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Person',
-              'name': 'John Niyontwali',
+              'name': 'Patrick Rwirangira',
               'jobTitle': 'Senior Full-Stack Developer',
               'description':
                 'Senior Full-Stack Developer with 8+ years of experience in JavaScript, Python, and cloud technologies',
-              'url': 'https://nijohn.vercel.app/',
-              'email': 'nijohn0001@gmail.com',
-              'telephone': '+250786266073',
+              'url': 'https://niPatrick.vercel.app/',
+              'email': 'rwpatrick001@gmail.com',
+              'telephone': '+250783992155',
               'address': {
                 '@type': 'PostalAddress',
                 'addressLocality': 'Kigali',
                 'addressCountry': 'Rwanda',
               },
               'sameAs': [
-                'https://github.com/niyontwali',
-                'https://www.linkedin.com/in/john-niyontwali-816549111/',
+                'https://github.com/Rwirangira',
+                'https://www.linkedin.com/in/Patrick-Rwirangira-816549111/',
               ],
               'knowsAbout': [
                 'React.js',

@@ -22,7 +22,7 @@ const Contact = () => {
             <i className='fa fa-phone' />
             <p>
               <span className='small-text'>phone</span>
-              +250 786 266 073
+              +250 783 992 155
             </p>
           </div>
           {/* CONTACT ITEM ENDS */}
@@ -42,7 +42,7 @@ const Contact = () => {
             <i className='fa fa-envelope' />
             <p>
               <span className='small-text'>email</span>
-              nijohn0001@gmail.com
+              rwpatrick001@gmail.com
             </p>
           </div>
           {/* CONTACT ITEM ENDS */}
@@ -52,25 +52,25 @@ const Contact = () => {
             <span className='small-text'>follow me</span>
             <ul className='social'>
               <li>
-                <a href='https://github.com/niyontwali' target='_blank'>
+                <a href='https://github.com/Rwirangira' target='_blank'>
                   <i className='fa-brands fa-github' />
                 </a>
               </li>
               <li>
                 <a
-                  href='https://www.linkedin.com/in/john-niyontwali-816549111/'
+                  href='https://www.linkedin.com/in/Patrick-Rwirangira-816549111/'
                   target='_blank'
                 >
                   <i className='fa-brands fa-linkedin' />
                 </a>
               </li>
               <li>
-                <a href='https://twitter.com/JohnNiyontwali' target='_blank'>
+                <a href='https://twitter.com/PatrickRwirangira' target='_blank'>
                   <i className='fa-brands fa-twitter' />
                 </a>
               </li>
               <li>
-                <a href='https://gitlab.com/nijohn' target='_blank'>
+                <a href='https://gitlab.com/niPatrick' target='_blank'>
                   <i className='fa-brands fa-gitlab' />
                 </a>
               </li>

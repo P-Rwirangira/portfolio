@@ -26,7 +26,7 @@ export default function Document() {
         <link rel='stylesheet' href='css/styleswitcher.css' />
       <link rel="stylesheet" href="/css/skins/yellow.css" />
 </Head>
-      <body>
+      <body suppressHydrationWarning>
         <Main />
         <NextScript />
       </body>

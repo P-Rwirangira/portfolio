@@ -101,7 +101,7 @@ const Clients = () => {
                 rel='noopener noreferrer'
               >
                 <img
-                  src='https://platform.rentplus.rw/assets/darkLogo-BTbvzdLP.png'
+                  src='https://placehold.co/300x150?text=RentPlus'
                   alt='rentplus'
                 />
               </a>

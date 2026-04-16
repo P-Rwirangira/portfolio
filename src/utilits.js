@@ -158,11 +158,7 @@ export const jqueryFuntion = async () => {
       } else {
         // Initialize WOW.js for mobile
         if (typeof window !== 'undefined') {
-          import('wowjs')
-            .then(({ WOW }) => {
-              new WOW().init();
-            })
-            .catch(console.error);
+          import('wowjs').then((module) => { const WOW = module.WOW || module.default?.WOW || module.default; if(WOW) new WOW().init(); }).catch(console.error);
         }
       }
     }

@@ -8,23 +8,23 @@ const Copyright = () => {
       />
       <div>
         <span>All rights reserved © {new Date().getFullYear()} </span>
-        <span>John Niyontwali</span>
+        <span>Patrick Rwirangira</span>
         <ul>
           <li>
-            <a href='https://github.com/niyontwali' target='_blank'>
+            <a href='https://github.com/Rwirangira' target='_blank'>
               <i className='fa-brands fa-github' />
             </a>
           </li>
           <li>
             <a
-              href='https://www.linkedin.com/in/john-niyontwali-816549111/'
+              href='https://www.linkedin.com/in/Patrick-Rwirangira-816549111/'
               target='_blank'
             >
               <i className='fa-brands fa-linkedin' />
             </a>
           </li>
           <li>
-            <a href='https://x.com/JohnNiyontwali' target='_blank'>
+            <a href='https://x.com/PatrickRwirangira' target='_blank'>
               <i className='fa-brands fa-twitter' />
             </a>
           </li>

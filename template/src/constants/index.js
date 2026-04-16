@@ -1,18 +1,18 @@
 export const homeContent = {
   greeting: 'Hello',
   intro: "I'm",
-  name: 'John',
+  name: 'Patrick',
   description:
     'Full-Stack Dev with 8+ years of experience building scalable web & mobile apps.',
 };
 
 export const personalInfo = {
-  name: 'John Niyontwali',
+  name: 'Patrick Rwirangira',
   age: new Date().getFullYear() - 1995,
   nationality: 'Rwandan',
   location: 'Kigali, Rwanda',
-  phone: '+250 786 266 073',
-  email: 'nijohn0001@gmail.com',
+  phone: '+250 783 992 155',
+  email: 'rwpatrick001@gmail.com',
   openToWork: true,
   languages: 'English',
 };
@@ -20,23 +20,23 @@ export const personalInfo = {
 export const aboutData = {
   personalInfo: {
     name: {
-      first: 'John',
-      last: 'Niyontwali',
+      first: 'Patrick',
+      last: 'Rwirangira',
     },
     birthYear: 1995,
     nationality: 'Rwandan',
     openToWork: 'Yes',
     languages: 'English',
     address: 'Kigali - Rwanda',
-    phone: '+250 786 266 073',
-    email: 'nijohn0001@gmail.com',
+    phone: '+250 783 992 155',
+    email: 'rwpatrick001@gmail.com',
     social: {
       github: {
-        url: 'https://github.com/niyontwali',
-        username: 'niyontwali',
+        url: 'https://github.com/Rwirangira',
+        username: 'Rwirangira',
       },
       linkedin: {
-        url: 'https://www.linkedin.com/in/john-niyontwali-816549111/',
+        url: 'https://www.linkedin.com/in/Patrick-Rwirangira-816549111/',
         username: 'linkedin',
       },
     },
@@ -196,8 +196,8 @@ export const projectsData = [
     title: 'Allbirds Web',
     type: 'gallery',
     images: [
-      'https://res.cloudinary.com/https-njohn-netlify-app/image/upload/v1757429620/portfolio%20pictures/project-11-1_idhp3h.png',
-      'https://res.cloudinary.com/https-njohn-netlify-app/image/upload/v1757429622/portfolio%20pictures/project-11-2_cjf6yn.png',
+      'https://res.cloudinary.com/https-nPatrick-netlify-app/image/upload/v1757429620/portfolio%20pictures/project-11-1_idhp3h.png',
+      'https://res.cloudinary.com/https-nPatrick-netlify-app/image/upload/v1757429622/portfolio%20pictures/project-11-2_cjf6yn.png',
     ],
     project: 'Website',
     client: 'Allbirds',
@@ -208,9 +208,9 @@ export const projectsData = [
     title: 'Vintra Web',
     type: 'gallery',
     images: [
-      'https://res.cloudinary.com/https-njohn-netlify-app/image/upload/v1757429614/portfolio%20pictures/project-10-1_xqubqk.png',
-      'https://res.cloudinary.com/https-njohn-netlify-app/image/upload/v1757429620/portfolio%20pictures/project-10-2_gp0uqe.png',
-      'https://res.cloudinary.com/https-njohn-netlify-app/image/upload/v1757429609/portfolio%20pictures/project-10-3_fgfhlq.png',
+      'https://res.cloudinary.com/https-nPatrick-netlify-app/image/upload/v1757429614/portfolio%20pictures/project-10-1_xqubqk.png',
+      'https://res.cloudinary.com/https-nPatrick-netlify-app/image/upload/v1757429620/portfolio%20pictures/project-10-2_gp0uqe.png',
+      'https://res.cloudinary.com/https-nPatrick-netlify-app/image/upload/v1757429609/portfolio%20pictures/project-10-3_fgfhlq.png',
     ],
     project: 'Website',
     client: 'Vintra',
@@ -220,7 +220,7 @@ export const projectsData = [
   {
     title: 'E-commerce',
     type: 'image',
-    src: 'https://res.cloudinary.com/https-njohn-netlify-app/image/upload/v1757429659/portfolio%20pictures/project-1_u6etqi.png',
+    src: 'https://res.cloudinary.com/https-nPatrick-netlify-app/image/upload/v1757429659/portfolio%20pictures/project-1_u6etqi.png',
     alt: 'Image Project',
     project: 'Website',
     client: 'Bizcotap Ltd',
@@ -250,8 +250,8 @@ export const projectsData = [
     title: 'BRC Web',
     type: 'gallery',
     images: [
-      'https://res.cloudinary.com/https-njohn-netlify-app/image/upload/v1757429646/portfolio%20pictures/project-2-1_mxvafd.png',
-      'https://res.cloudinary.com/https-njohn-netlify-app/image/upload/v1757429646/portfolio%20pictures/project-2-2_moejwl.png',
+      'https://res.cloudinary.com/https-nPatrick-netlify-app/image/upload/v1757429646/portfolio%20pictures/project-2-1_mxvafd.png',
+      'https://res.cloudinary.com/https-nPatrick-netlify-app/image/upload/v1757429646/portfolio%20pictures/project-2-2_moejwl.png',
     ],
     project: 'BRC Website',
     client: 'PSF',
@@ -262,8 +262,8 @@ export const projectsData = [
     title: 'Shield Web',
     type: 'gallery',
     images: [
-      'https://res.cloudinary.com/https-njohn-netlify-app/image/upload/v1757429656/portfolio%20pictures/project-3-1_urbrxv.png',
-      'https://res.cloudinary.com/https-njohn-netlify-app/image/upload/v1757429642/portfolio%20pictures/project-3-2_baleml.png',
+      'https://res.cloudinary.com/https-nPatrick-netlify-app/image/upload/v1757429656/portfolio%20pictures/project-3-1_urbrxv.png',
+      'https://res.cloudinary.com/https-nPatrick-netlify-app/image/upload/v1757429642/portfolio%20pictures/project-3-2_baleml.png',
     ],
     project: 'Website',
     client: 'Shield Associates',
@@ -274,8 +274,8 @@ export const projectsData = [
     title: 'Acreol Web',
     type: 'gallery',
     images: [
-      'https://res.cloudinary.com/https-njohn-netlify-app/image/upload/v1757429647/portfolio%20pictures/project-4-1_sotfsn.png',
-      'https://res.cloudinary.com/https-njohn-netlify-app/image/upload/v1757429640/portfolio%20pictures/project-4-2_faqpcw.png',
+      'https://res.cloudinary.com/https-nPatrick-netlify-app/image/upload/v1757429647/portfolio%20pictures/project-4-1_sotfsn.png',
+      'https://res.cloudinary.com/https-nPatrick-netlify-app/image/upload/v1757429640/portfolio%20pictures/project-4-2_faqpcw.png',
     ],
     project: 'Website',
     client: 'Acreol Website',
@@ -286,8 +286,8 @@ export const projectsData = [
     title: 'TechQuest ',
     type: 'gallery',
     images: [
-      'https://res.cloudinary.com/https-njohn-netlify-app/image/upload/v1757429637/portfolio%20pictures/project-5-1_dqbtee.png',
-      'https://res.cloudinary.com/https-njohn-netlify-app/image/upload/v1757429638/portfolio%20pictures/project-5-2_go4vgx.png',
+      'https://res.cloudinary.com/https-nPatrick-netlify-app/image/upload/v1757429637/portfolio%20pictures/project-5-1_dqbtee.png',
+      'https://res.cloudinary.com/https-nPatrick-netlify-app/image/upload/v1757429638/portfolio%20pictures/project-5-2_go4vgx.png',
     ],
     project: 'Website',
     client: 'TechQuest Ltd',
@@ -298,8 +298,8 @@ export const projectsData = [
     title: 'E-commerce',
     type: 'gallery',
     images: [
-      'https://res.cloudinary.com/https-njohn-netlify-app/image/upload/v1757429635/portfolio%20pictures/project-6-1_lgaohj.png',
-      'https://res.cloudinary.com/https-njohn-netlify-app/image/upload/v1757429630/portfolio%20pictures/project-6-2_occnfj.png',
+      'https://res.cloudinary.com/https-nPatrick-netlify-app/image/upload/v1757429635/portfolio%20pictures/project-6-1_lgaohj.png',
+      'https://res.cloudinary.com/https-nPatrick-netlify-app/image/upload/v1757429630/portfolio%20pictures/project-6-2_occnfj.png',
     ],
     project: 'E-commerce Platform',
     client: 'DHDealz Ltd',
@@ -310,10 +310,10 @@ export const projectsData = [
     title: 'Rentplus Web',
     type: 'gallery',
     images: [
-      'https://res.cloudinary.com/https-njohn-netlify-app/image/upload/v1757429638/portfolio%20pictures/project-7-1_bh5c4h.png',
-      'https://res.cloudinary.com/https-njohn-netlify-app/image/upload/v1757429628/portfolio%20pictures/project-7-2_ljqwil.png',
-      'https://res.cloudinary.com/https-njohn-netlify-app/image/upload/v1757429600/portfolio%20pictures/project-7-3_alfjsj.png',
-      'https://res.cloudinary.com/https-njohn-netlify-app/image/upload/v1757429612/portfolio%20pictures/project-7-4_lfbsyz.png',
+      'https://res.cloudinary.com/https-nPatrick-netlify-app/image/upload/v1757429638/portfolio%20pictures/project-7-1_bh5c4h.png',
+      'https://res.cloudinary.com/https-nPatrick-netlify-app/image/upload/v1757429628/portfolio%20pictures/project-7-2_ljqwil.png',
+      'https://res.cloudinary.com/https-nPatrick-netlify-app/image/upload/v1757429600/portfolio%20pictures/project-7-3_alfjsj.png',
+      'https://res.cloudinary.com/https-nPatrick-netlify-app/image/upload/v1757429612/portfolio%20pictures/project-7-4_lfbsyz.png',
     ],
     project: 'Property Management',
     client: 'Rent Plus Ltd',
@@ -324,8 +324,8 @@ export const projectsData = [
     title: 'Buehler Web',
     type: 'gallery',
     images: [
-      'https://res.cloudinary.com/https-njohn-netlify-app/image/upload/v1757429640/portfolio%20pictures/project-8-1_tgk8nk.png',
-      'https://res.cloudinary.com/https-njohn-netlify-app/image/upload/v1757429636/portfolio%20pictures/project-8-2_jjyexq.png',
+      'https://res.cloudinary.com/https-nPatrick-netlify-app/image/upload/v1757429640/portfolio%20pictures/project-8-1_tgk8nk.png',
+      'https://res.cloudinary.com/https-nPatrick-netlify-app/image/upload/v1757429636/portfolio%20pictures/project-8-2_jjyexq.png',
     ],
     project: 'Website',
     client: 'Buehler Engineering',
@@ -335,7 +335,7 @@ export const projectsData = [
   {
     title: 'Galloway Web ',
     type: 'image',
-    src: 'https://res.cloudinary.com/https-njohn-netlify-app/image/upload/v1757429654/portfolio%20pictures/project-9-1_hmlafw.png',
+    src: 'https://res.cloudinary.com/https-nPatrick-netlify-app/image/upload/v1757429654/portfolio%20pictures/project-9-1_hmlafw.png',
     project: 'Website',
     client: 'Galloway',
     duration: '2 months',
@@ -344,7 +344,7 @@ export const projectsData = [
   {
     title: 'Stansile Web',
     type: 'image',
-    src: 'https://res.cloudinary.com/https-njohn-netlify-app/image/upload/v1757429640/portfolio%20pictures/project-12-1_rrvt3v.png',
+    src: 'https://res.cloudinary.com/https-nPatrick-netlify-app/image/upload/v1757429640/portfolio%20pictures/project-12-1_rrvt3v.png',
     project: 'Website & CMS',
     client: 'Business Pro Solutions',
     duration: '1.5 months',
