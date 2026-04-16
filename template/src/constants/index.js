@@ -3,7 +3,7 @@ export const homeContent = {
   intro: "I'm",
   name: 'Patrick',
   description:
-    'Full-Stack Dev with 8+ years of experience building scalable web & mobile apps.',
+    'Full-Stack Dev wtih 3+ years of experience building scalable web & mobile apps.',
 };
 
 export const personalInfo = {
@@ -143,7 +143,7 @@ export const aboutData = {
     {
       title: 'Lead Developer',
       period: 'Jan 2020 - Oct 2021',
-      company: 'Bizcotap',
+      company: 'Andela',
       type: 'experience',
     },
     {
@@ -223,17 +223,17 @@ export const projectsData = [
     src: 'https://res.cloudinary.com/https-nPatrick-netlify-app/image/upload/v1757429659/portfolio%20pictures/project-1_u6etqi.png',
     alt: 'Image Project',
     project: 'Website',
-    client: 'Bizcotap Ltd',
+    client: 'Andela Ltd',
     duration: '1 month',
-    link: 'https://bizcotap.com/',
+    link: 'https://Andela.com/',
   },
   {
     title: 'NFC System',
     type: 'video',
     src: 'https://www.youtube.com/embed/yD8VL4POow8',
-    videoTitle: 'Bizcotap Business Card',
+    videoTitle: 'Andela Business Card',
     project: 'NFC enabled system',
-    client: 'Bizcotap Ltd',
+    client: 'Andela Ltd',
     duration: '2 months',
     link: 'https://www.youtube.com/watch?v=yD8VL4POow8',
   },
@@ -266,7 +266,7 @@ export const projectsData = [
       'https://res.cloudinary.com/https-nPatrick-netlify-app/image/upload/v1757429642/portfolio%20pictures/project-3-2_baleml.png',
     ],
     project: 'Website',
-    client: 'Shield Associates',
+    client: 'Lunds Peace Foundation',
     duration: '1 months',
     link: 'https://shield-associates.com/',
   },

@@ -13,7 +13,7 @@ const Clients = () => {
           {/* SWIPER ITEM STARTS */}
           <SwiperSlide className='swiper-slide'>
             <div>
-              <img src='assets/clients/bizcotap.png' alt='bizcotap' />
+              <img src='assets/clients/Andela.png' alt='Andela' />
             </div>
             <div>
               <img src='assets/clients/brc.png' alt='brc' />

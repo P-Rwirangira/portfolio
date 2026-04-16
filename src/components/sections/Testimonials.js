@@ -14,7 +14,7 @@ const Testimonials = () => {
                 related technical problems."
               </span>
               <span className='person'>JC Mugisha</span>
-              <span className='job'>Bizcotap - Backend Dev</span>
+              <span className='job'>Andela - Backend Dev</span>
             </p>
           </div>
         </div>
@@ -29,7 +29,7 @@ const Testimonials = () => {
                 remained polished, professional, and aligned with our brand."
               </span>
               <span className='person'>Maggie Baingana</span>
-              <span className='job'>Managing Partner - Shield Associates</span>
+              <span className='job'>Managing Partner - Lunds Peace Foundation</span>
             </p>
           </div>
         </div>
@@ -44,7 +44,7 @@ const Testimonials = () => {
                 in keeping our systems reliable and effective."
               </span>
               <span className='person'>Pacifique Ndishimye</span>
-              <span className='job'>CEO - Stansile</span>
+              <span className='job'>CEO -Ubaka Inc</span>
             </p>
           </div>
         </div>
@@ -59,7 +59,7 @@ const Testimonials = () => {
                 reliability, and technical expertise set him apart."
               </span>
               <span className='person'>Hendrik Oviir</span>
-              <span className='job'>CEO - Eliit Mehed</span>
+              <span className='job'>CEO -Chafetz</span>
             </p>
           </div>
         </div>

@@ -27,7 +27,7 @@ const Index = () => {
         </title>
         <meta
           name='description'
-          content='Senior Full-Stack Developer with 8+ years experience in React.js, Next.js, Node.js, Python, FastAPI, and AWS. Based in Kigali, Rwanda. Mentored 100+ developers, built applications for 10,000+ users.'
+          content='Senior Full-Stack Developer wtih 3+ years experience in React.js, Next.js, Node.js, Python, FastAPI, and AWS. Based in Kigali, Rwanda. Mentored 100+ developers, built applications for 10,000+ users.'
         />
         <meta
           name='keywords'
@@ -44,7 +44,7 @@ const Index = () => {
         />
         <meta
           property='og:description'
-          content='Senior Full-Stack Developer with 8+ years experience building scalable applications across healthcare, fintech, and enterprise sectors. Advanced in React, Node.js, Python, and cloud technologies.'
+          content='Senior Full-Stack Developer wtih 3+ years experience building scalable applications across healthcare, fintech, and enterprise sectors. Advanced in React, Node.js, Python, and cloud technologies.'
         />
         <meta property='og:url' content='https://niPatrick.vercel.app/' />
         <meta property='og:site_name' content='Patrick Rwirangira Portfolio' />
@@ -75,7 +75,7 @@ const Index = () => {
               'name': 'Patrick Rwirangira',
               'jobTitle': 'Senior Full-Stack Developer',
               'description':
-                'Senior Full-Stack Developer with 8+ years of experience in JavaScript, Python, and cloud technologies',
+                'Senior Full-Stack Developer wtih 3+ years of experience in JavaScript, Python, and cloud technologies',
               'url': 'https://niPatrick.vercel.app/',
               'email': 'rwpatrick001@gmail.com',
               'telephone': '+250783992155',
