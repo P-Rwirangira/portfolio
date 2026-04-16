@@ -3,7 +3,7 @@ export const homeContent = {
   intro: "I'm",
   name: 'Patrick',
   description:
-    'Full-Stack Dev wtih 3+ years of experience building scalable web & mobile apps.',
+    'Full-Stack Dev wtih 3+ years of experience building scalable web apps and reliable systems.',
 };
 
 export const personalInfo = {
@@ -26,19 +26,19 @@ export const aboutData = {
     birthYear: 1995,
     nationality: 'Rwandan',
     openToWork: 'Yes',
-    languages: 'English',
+    languages: 'English - Kinyarwanda',
     address: 'Kigali - Rwanda',
-    phone: '',
+    phone: '0783992155',
     email: 'rwpatrick001@gmail.com',
     social: {
       github: {
-        url: 'https://github.com/patrick',
-        username: 'patrick',
+        url: 'https://github.com/p-rwirangira',
+        username: 'Rwirangira',
       },
-      linkedin: {
-        url: 'https://www.linkedin.com/in/patrick-rwirangira/',
-        username: 'linkedin',
-      },
+      // linkedin: {
+      //   url: 'https://www.linkedin.com/in/rwirangira/',
+      //   username: 'linkedin',
+      // },
     },
     image: '/media/profile.jpeg',
   },
@@ -229,22 +229,22 @@ export const projectsData = [
   },
   {
     title: 'NFC System',
-    type: 'video',
-    src: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    videoTitle: 'Andela Business Card',
+    type: 'image',
+    src: 'https://placehold.co/800x600/1e1e1e/fff?text=NFC+System+App',
+    alt: 'Andela Business Card',
     project: 'NFC enabled system',
     client: 'Andela Ltd',
     duration: '2 months',
-    link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    link: '#',
   },
   {
     title: 'WelTel Platform',
-    type: 'video',
-    src: 'https://www.youtube.com/embed/tgbNymZ7vqY',
-    videoTitle: 'WelTel Platform',
+    type: 'image',
+    src: 'https://placehold.co/800x600/1e1e1e/fff?text=WelTel+Platform',
+    alt: 'WelTel Platform',
     project: 'Health Platform',
     client: 'WelTel Inc',
-    link: 'https://www.youtube.com/watch?v=tgbNymZ7vqY',
+    link: '#',
   },
   {
     title: 'BRC Web',

@@ -108,7 +108,7 @@ const About = () => {
               <li>
                 <span>
                   <span className='animated-layer fade-in-up-animation fadeInUp wow'>
-                    <span>github and linkedin:</span>
+                    <span>GitHub account:</span>
                     <a
                       href={personalInfo.social.github.url}
                       target='_blank'
@@ -116,14 +116,14 @@ const About = () => {
                     >
                       {personalInfo.social.github.username}
                     </a>{' '}
-                    and{' '}
+                    {/* and{' '}
                     <a
                       href={personalInfo.social.linkedin.url}
                       target='_blank'
                       rel='noopener noreferrer'
                     >
                       {personalInfo.social.linkedin.username}
-                    </a>
+                    </a> */}
                   </span>
                 </span>
               </li>

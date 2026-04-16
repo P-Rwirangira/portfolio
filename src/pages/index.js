@@ -17,7 +17,7 @@ import { Fragment, useEffect } from 'react';
 const Index = () => {
   useEffect(() => {
     jqueryFuntion();
-  });
+  }, []);
 
   return (
     <Fragment>
@@ -46,7 +46,7 @@ const Index = () => {
           property='og:description'
           content='Senior Full-Stack Developer wtih 3+ years experience building scalable applications across healthcare, fintech, and enterprise sectors. Advanced in React, Node.js, Python, and cloud technologies.'
         />
-        <meta property='og:url' content='https://niPatrick.vercel.app/' />
+        <meta property='og:url' content='https://rwpatrick.netlify.app/' />
         <meta property='og:site_name' content='Patrick Rwirangira Portfolio' />
 
         {/* Twitter */}
@@ -63,7 +63,7 @@ const Index = () => {
         {/* Additional SEO */}
         <meta name='geo.region' content='RW-01' />
         <meta name='geo.placename' content='Kigali, Rwanda' />
-        <link rel='canonical' href='https://niPatrick.vercel.app/' />
+        <link rel='canonical' href='https://rwpatrick.netlify.app/' />
 
         {/* Structured Data */}
         <script
@@ -76,7 +76,7 @@ const Index = () => {
               'jobTitle': 'Senior Full-Stack Developer',
               'description':
                 'Senior Full-Stack Developer wtih 3+ years of experience in JavaScript, Python, and cloud technologies',
-              'url': 'https://niPatrick.vercel.app/',
+              'url': 'https://rwpatrick.netlify.app/',
               'email': 'rwpatrick001@gmail.com',
               'telephone': '+250783992155',
               'address': {
@@ -85,8 +85,8 @@ const Index = () => {
                 'addressCountry': 'Rwanda',
               },
               'sameAs': [
-                'https://github.com/Rwirangira',
-                'https://www.linkedin.com/in/Patrick-Rwirangira-816549111/',
+                'https://github.com/p-rwirangira',
+                'https://www.linkedin.com/in/p-rwirangira-Rwirangira-816549111/',
               ],
               'knowsAbout': [
                 'React.js',
@@ -123,7 +123,7 @@ const Index = () => {
             <Separator type={'up'} />
             <Contact />
             <Separator type={'down'} />
-            <Clients />
+            {/* <Clients /> */}
             <Separator type={'up'} />
             <Blog />
             <Separator type={'down'} />

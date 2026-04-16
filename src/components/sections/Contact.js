@@ -52,26 +52,21 @@ const Contact = () => {
             <span className='small-text'>follow me</span>
             <ul className='social'>
               <li>
-                <a href='https://github.com/Rwirangira' target='_blank'>
+                <a href='https://github.com/p-rwirangira' target='_blank'>
                   <i className='fa-brands fa-github' />
                 </a>
               </li>
               <li>
                 <a
-                  href='https://www.linkedin.com/in/Patrick-Rwirangira-816549111/'
+                  href='https://www.linkedin.com/in/p-rwirangira-Rwirangira-816549111/'
                   target='_blank'
                 >
                   <i className='fa-brands fa-linkedin' />
                 </a>
               </li>
               <li>
-                <a href='https://twitter.com/PatrickRwirangira' target='_blank'>
+                <a href='https://x.com/Rwirangira' target='_blank'>
                   <i className='fa-brands fa-twitter' />
-                </a>
-              </li>
-              <li>
-                <a href='https://gitlab.com/niPatrick' target='_blank'>
-                  <i className='fa-brands fa-gitlab' />
                 </a>
               </li>
             </ul>

@@ -10,7 +10,7 @@ export const jqueryFuntion = async () => {
 
   const $ = window.$;
 
-  $(window).on('load', function () {
+  const initApp = function () {
     /* ----------------------------------------------------------- */
     /*  PAGE PRELOADER
     /* ----------------------------------------------------------- */
@@ -158,11 +158,21 @@ export const jqueryFuntion = async () => {
       } else {
         // Initialize WOW.js for mobile
         if (typeof window !== 'undefined') {
-          import('wowjs').then((module) => { const WOW = module.WOW || module.default?.WOW || module.default; if(WOW) new WOW().init(); }).catch(console.error);
+          import('wowjs').then((module) => { let WOW = module.WOW || (module.default && module.default.WOW) || module.default; if (typeof WOW === 'function') { new WOW().init(); } else if (window.WOW) { new window.WOW().init(); } }).catch(console.error);
         }
       }
     }
-  });
+  };
+  
+  // Initialize immediately instead of waiting for window.load
+  // which might have already fired in a React app
+  if (document.readyState === 'complete') {
+    initApp();
+  } else {
+    $(window).on('load', initApp);
+    // Also try running it soon anyway as a fallback
+    setTimeout(initApp, 100);
+  }
 
   $(document).ready(function () {
     /* ----------------------------------------------------------- */

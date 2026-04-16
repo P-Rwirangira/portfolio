@@ -8,7 +8,7 @@ import Head from 'next/head';
 const App = ({ Component, pageProps }) => {
   return (
     <Fragment>
-      <div suppressHydrationWarning>
+      
       <Head>
         {/* Basic meta tags */}
         <meta charSet='utf-8' />
@@ -16,8 +16,7 @@ const App = ({ Component, pageProps }) => {
       </Head>
       <Preloader />
       <Component {...pageProps} />
-          </div>
-    </Fragment>
+          </Fragment>
   );
 };
 

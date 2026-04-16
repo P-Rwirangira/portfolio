@@ -36,7 +36,7 @@ const Portfolio = () => {
               ) : project.type === 'video' ? (
                 <div className='videocontainer'>
                   <iframe
-                    className='youtube-video'
+                    className='video-frame'
                     src={project.src}
                     allowFullScreen
                     allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'

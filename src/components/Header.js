@@ -1,6 +1,6 @@
 const Header = () => {
   // Your WhatsApp number
-  const whatsappNumber = '250786266073';
+  const whatsappNumber = '250783992155';
   const whatsappMessage = "Hello! I'd like to get in touch.";
 
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
