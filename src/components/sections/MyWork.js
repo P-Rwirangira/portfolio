@@ -28,11 +28,14 @@ const Portfolio = () => {
             {/* ITEM MAIN CONTENT STARTS */}
             <div className='main-content'>
               {project.type === 'image' ? (
-                <img
-                  className='img-fluid'
-                  src={project.src}
-                  alt={project.alt}
-                />
+                <div onClick={() => window.open(project.link, '_blank')} className='external' style={{ display: 'block', width: '100%', height: '100%', zIndex: 10, position: 'relative' }}>
+                  <img
+                    className='img-fluid'
+                    src={project.src}
+                    alt={project.alt}
+                    style={{ cursor: 'pointer', pointerEvents: 'auto' }}
+                  />
+                </div>
               ) : project.type === 'video' ? (
                 <div className='videocontainer'>
                   <iframe
@@ -49,10 +52,17 @@ const Portfolio = () => {
                 <Swiper
                   {...mySlider.portfolioItems}
                   className='swiper swiper-portfolio-item'
+                  style={{ zIndex: 10, position: 'relative' }}
                 >
                   {project.images.map((image, imgIndex) => (
                     <SwiperSlide key={imgIndex} className='swiper-slide'>
-                      <img src={image} title='img' />
+                      <div onClick={() => window.open(project.link, '_blank')} className='external' style={{ display: 'block', width: '100%', height: '100%', zIndex: 10, position: 'relative' }}>
+                        <img 
+                          src={image} 
+                          title='Image' 
+                          style={{ cursor: 'pointer', pointerEvents: 'auto' }} 
+                        />
+                      </div>
                     </SwiperSlide>
                   ))}
                   <div className='swiper-pagination' />

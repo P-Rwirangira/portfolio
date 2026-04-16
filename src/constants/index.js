@@ -86,7 +86,7 @@ export const aboutData = {
 
     // Blockchain & Web3
     { icon: 'ri-links-fill', name: 'Solidity' }, 
-    { icon: 'ri-hard-hat-fill', name: 'Hardhat' }, 
+    { icon: 'fa-solid fa-hard-hat', name: 'Hardhat' }, 
     { icon: 'ri-braces-line', name: 'ethers.js' }, 
     { icon: 'ri-shield-check-fill', name: 'OpenZeppelin' }, 
 
@@ -160,21 +160,21 @@ export const blogs = [
 
 export const projectsData = [
   {
-    title: 'Lund Peace Foundation',
+    title: 'Lund Peace Foundation Inc .',
     type: 'gallery',
     images: ['assets/lunds1.png', 'assets/lunds2.png'],
-    project: 'Website',
+    project: 'Foundation Website',
     client: 'Lund Peace Foundation Inc',
     duration: 'Ongoing',
     link: 'https://lundspeacefoundation.vercel.app',
   },
   {
-    title: 'Ubaka Inc',
+    title: 'Ubaka Inc .',
     type: 'gallery',
     images: ['assets/ubaka1.png', 'assets/ubaka2.png'],
-    project: 'Web Application',
+    project: 'Architecture Market place',
     client: 'Ubaka Inc',
-    duration: 'Done',
+    duration: '1 month',
     link: 'https://zippy-crepe-15fe7b.netlify.app/',
   }
 ];

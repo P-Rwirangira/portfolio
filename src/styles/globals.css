@@ -54,3 +54,252 @@
   font-size: 25px;
   color: #fff;
 }
+
+/* ========================================================================= */
+/* LIGHT THEME OVERRIDES (Replacing the invert hack)                         */
+/* ========================================================================= */
+
+body.light-theme {
+  background-color: #E2EAE7 !important; /* Soft, cool gray-teal instead of white */
+  color: #124655 !important;
+}
+
+body.light-theme .main-section,
+body.light-theme .facts,
+body.light-theme .testimonials,
+body.light-theme .clients,
+body.light-theme .copyright {
+  background-color: #E2EAE7 !important;
+}
+
+body.light-theme .img-container:after {
+  background-color: #E2EAE7 !important;
+}
+
+body.light-theme h1,
+body.light-theme h2,
+body.light-theme h3,
+body.light-theme h4,
+body.light-theme h5,
+body.light-theme h6,
+body.light-theme .custom-title h3,
+body.light-theme .blog .latestposts a .content span.title {
+  color: #124655 !important;
+}
+
+body.light-theme .custom-title h3 span span {
+  color: #124655 !important;
+}
+
+body.light-theme p,
+body.light-theme span,
+body.light-theme li,
+body.light-theme .copyright span,
+body.light-theme .blog .meta span {
+  color: #124655 !important;
+}
+
+body.light-theme a {
+  color: #124655 !important;
+}
+
+/* Sections backgrounds (e.g. #222) */
+body.light-theme .box-wrapper, 
+body.light-theme .details,
+body.light-theme .mobile-menu,
+body.light-theme .contact-box,
+body.light-theme .blog-post,
+body.light-theme .post-content,
+body.light-theme .typewriter-preloader,
+body.light-theme .facts>div>div>div,
+body.light-theme .testimonials .quote-container>div p,
+body.light-theme .clients-container>div>div>div,
+body.light-theme .blog .latestposts>div,
+body.light-theme .blog .latestposts>div a,
+body.light-theme .blog .latestposts a .content,
+body.light-theme .copyright>div,
+body.light-theme .contact .boxes>div>div,
+body.light-theme .about .timeline ol li>div {
+  background-color: #EEF3F1 !important; /* A slightly lighter shade of the background, but clearly not white */
+  box-shadow: 0 4px 15px rgba(18, 70, 85, 0.08) !important; /* Subtle teal shadow for depth */
+}
+
+/* Fix border radius issues only for testimony cards */
+body.light-theme .testimonials .quote-container>div p {
+  border-radius: 20px !important;
+}
+
+/* Timeline specific pointer arrows for light theme */
+body.light-theme .about .timeline ol li:nth-child(odd)>div::before {
+  border-color: #EEF3F1 transparent transparent transparent !important;
+}
+
+body.light-theme .about .timeline ol li:nth-child(even)>div::before {
+  border-color: transparent transparent transparent #EEF3F1 !important;
+}
+
+@media (max-width: 1024px) {
+  body.light-theme .about .timeline ol li:nth-child(odd)>div::before,
+  body.light-theme .about .timeline ol li:nth-child(even)>div::before {
+    border-color: transparent transparent transparent transparent !important;
+    border-left-color: #EEF3F1 !important;
+  }
+}
+
+/* Contact floating icons */
+body.light-theme .contact .boxes>div>div>i {
+  background-color: #EEF3F1 !important;
+  border-color: #E2EAE7 !important; /* using the base background for the border */
+}
+
+/* Ensure no inner dark background for testimonials and facts */
+body.light-theme .testimonials .quote-container>div {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Lighten dark image overlays for parallax sections */
+body.light-theme .facts:before,
+body.light-theme .clients:before,
+body.light-theme .testimonials:before {
+  background-color: rgba(226, 234, 231, 0.85) !important; 
+}
+
+body.light-theme .header-inner {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+body.light-theme .header-inner ul li span.active,
+body.light-theme .header-inner ul li span:hover {
+  color: #10b981 !important;
+}
+
+body.light-theme .about .content h3, 
+body.light-theme .about .content h4 {
+  color: #124655 !important;
+}
+
+body.light-theme .details h4 {
+  color: #124655 !important;
+}
+
+body.light-theme .details ul li span {
+  color: #124655 !important;
+}
+
+body.light-theme .details ul li span i {
+  color: #10b981 !important;
+}
+
+body.light-theme .custom-btn {
+  border-color: #10b981 !important;
+}
+
+body.light-theme .custom-btn span {
+  color: #10b981 !important;
+}
+
+body.light-theme .custom-btn:hover {
+  background-color: #10b981 !important;
+}
+
+body.light-theme .custom-btn:hover span {
+  color: #ffffff !important;
+}
+
+/* Buttons / inputs */
+body.light-theme input,
+body.light-theme textarea {
+  background-color: #E2EAE7 !important; /* Match the base background */
+  color: #124655 !important;
+  border-color: #124655 !important;
+}
+
+body.light-theme input::placeholder,
+body.light-theme textarea::placeholder {
+  color: #124655 !important;
+  opacity: 0.7;
+}
+
+/* Theme Switcher Button */
+.theme-switcher-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999999;
+  background: #1a1a1a;
+  color: #f5f5f5;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+body.light-theme .theme-switcher-btn {
+  background: #10b981;
+  color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.theme-switcher-btn:hover {
+  transform: scale(1.1);
+}
+
+.theme-switcher-btn i {
+  font-size: 20px;
+}
+
+/* Invert black separator PNGs to match the #E2EAE7 background perfectly using an SVG filter */
+body.light-theme img[src*="separator"] {
+  filter: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='mint'%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.886 0 0 0 0 0.917 0 0 0 0 0.906 0 0 0 1 0'/%3E%3C/filter%3E%3C/svg%3E#mint");
+  opacity: 0.5;
+}
+
+/* Yellow Skin Overrides for Light Theme (Vibrant Green: #10b981) */
+body.light-theme .home > div h1 > span:first-child span span,
+body.light-theme .skills > div > div span i,
+body.light-theme .about .infos ul li > span > span:before,
+body.light-theme .facts > div > div > div h3,
+body.light-theme .about h2 > span:first-child,
+body.light-theme .testimonials .quote-container > div:before,
+body.light-theme .contact .boxes > div > div > i,
+body.light-theme .timeline ol li > div > div > h4,
+body.light-theme .copyright ul li a:hover,
+body.light-theme .testimonials .quote-container > div p span.person,
+body.light-theme .contact .boxes .social li a:hover,
+body.light-theme .copyright > div > span a,
+body.light-theme .mCSB_dragger_bar:after,
+body.light-theme header .header-inner .mail p span,
+body.light-theme .main-post .meta i,
+body.light-theme .copyright ul li a i,
+body.light-theme .blog .meta i {
+    color: #10b981 !important;
+}
+
+body.light-theme .home .cta,
+body.light-theme .nav-item,
+body.light-theme header .header-inner .menu ul li span:before,
+body.light-theme .mCSB_dragger_bar:before,
+body.light-theme .custom-btn:before,
+body.light-theme .line:before,
+body.light-theme .nav-item:hover,
+body.light-theme .category,
+body.light-theme .clients .swiper-pagination-bullet.swiper-pagination-bullet-active,
+body.light-theme .portfolio .single-item .swiper-pagination-bullet.swiper-pagination-bullet-active,
+body.light-theme .timeline ol li > div > div > span,
+body.light-theme .timeline ol li:not(:last-child)::after,
+body.light-theme .blog-page .page-item.active .page-link,
+body.light-theme .blog-page .page-item .page-link:hover {
+    background-color: #10b981 !important;
+}
+
+body.light-theme .home>div>div h1 > span > span > span {
+    text-shadow: 8px 8px #10b981, 20px 20px #e0e0e0 !important;
+}
