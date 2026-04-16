@@ -43,99 +43,84 @@ export const aboutData = {
     image: '/media/profile.jpeg',
   },
   skills: [
-    // Programming Languages
-    { icon: 'devicon-javascript-plain', name: 'JavaScript' },
-    { icon: 'devicon-typescript-plain', name: 'TypeScript' },
-    { icon: 'devicon-python-plain', name: 'Python' },
-    { icon: 'devicon-csharp-plain', name: 'C#' },
-    { icon: 'devicon-php-plain', name: 'PHP' },
-    { icon: 'devicon-html5-plain', name: 'HTML5' },
-    { icon: 'devicon-css3-plain', name: 'CSS3' },
+    // Languages
+    { icon: 'ri-javascript-fill', name: 'JavaScript' },
+    { icon: 'ri-braces-fill', name: 'TypeScript' },
+    { icon: 'ri-terminal-box-fill', name: 'Python' },
+    { icon: 'ri-file-code-fill', name: 'Solidity' }, 
+    { icon: 'ri-html5-fill', name: 'HTML5' },
+    { icon: 'ri-css3-fill', name: 'CSS3' },
+    { icon: 'ri-database-2-fill', name: 'SQL' }, 
 
-    // Frontend Frameworks & Libraries
-    { icon: 'devicon-react-plain', name: 'React.js' },
-    { icon: 'devicon-nextjs-plain', name: 'Next.js' },
-    { icon: 'devicon-javascript-plain', name: 'Angular' },
-    { icon: 'devicon-flutter-plain', name: 'Flutter' },
-    { icon: 'devicon-redux-plain', name: 'Redux' },
+    // Backend
+    { icon: 'ri-server-fill', name: 'Node.js' },
+    { icon: 'ri-window-fill', name: 'Express.js' },
+    { icon: 'ri-layout-grid-fill', name: 'NestJS' },
 
-    // Backend Frameworks
-    { icon: 'devicon-nodejs-plain', name: 'Node.js' },
-    { icon: 'devicon-express-original', name: 'Express.js' },
-    { icon: 'devicon-nestjs-plain', name: 'Nest.js' },
-    { icon: 'devicon-flask-plain', name: 'Flask' },
-    { icon: 'devicon-python-plain', name: 'Django' },
-    { icon: 'devicon-python-plain', name: 'FastAPI' },
-    { icon: 'devicon-dotnetcore-plain', name: '.NET Core' },
-    { icon: 'devicon-laravel-plain', name: 'Laravel' },
+    // Frontend
+    { icon: 'ri-reactjs-fill', name: 'React' },
+    { icon: 'ri-shape-2-fill', name: 'Redux' },
+    { icon: 'ri-paint-brush-fill', name: 'Tailwind CSS' },
+    { icon: 'ri-global-fill', name: 'Next.js' },
 
-    // UI Libraries & CSS Frameworks
-    { icon: 'devicon-tailwindcss-plain', name: 'Tailwind CSS' },
-    { icon: 'devicon-bootstrap-plain', name: 'Bootstrap' },
-    { icon: 'devicon-materialui-plain', name: 'Material UI' },
-    { icon: 'devicon-sass-plain', name: 'Sass' },
+    // Database
+    { icon: 'ri-database-fill', name: 'PostgreSQL' },
+    { icon: 'ri-database-line', name: 'MySQL' },
+    { icon: 'ri-leaf-fill', name: 'MongoDB' },
 
-    // Databases
-    { icon: 'devicon-postgresql-plain', name: 'PostgreSQL' },
-    { icon: 'devicon-mongodb-plain', name: 'MongoDB' },
-    { icon: 'devicon-mysql-plain', name: 'MySQL' },
-    { icon: 'devicon-redis-plain', name: 'Redis' },
-    { icon: 'devicon-firebase-plain', name: 'Firebase' },
+    // Data Science
+    { icon: 'ri-bar-chart-box-fill', name: 'NumPy' }, 
+    { icon: 'ri-table-fill', name: 'Pandas' }, 
+    { icon: 'ri-line-chart-fill', name: 'Matplotlib' }, 
+    { icon: 'ri-pie-chart-2-fill', name: 'Seaborn' }, 
 
-    // Cloud Platforms
-    { icon: 'devicon-amazonwebservices-plain', name: 'AWS' },
-    { icon: 'devicon-googlecloud-plain', name: 'Google Cloud' },
-    { icon: 'devicon-azure-plain', name: 'Azure' },
-    { icon: 'devicon-digitalocean-plain', name: 'DigitalOcean' },
+    // Payments
+    { icon: 'ri-bank-card-fill', name: 'Stripe' }, 
+    { icon: 'ri-paypal-fill', name: 'PayPal' }, 
 
-    // DevOps & Tools
-    { icon: 'devicon-docker-plain', name: 'Docker' },
-    { icon: 'devicon-kubernetes-plain', name: 'Kubernetes' },
-    { icon: 'devicon-git-plain', name: 'Git' },
-    { icon: 'devicon-github-plain', name: 'GitHub Actions' },
-    { icon: 'devicon-gitlab-plain', name: 'GitLab CI' },
-    { icon: 'devicon-linux-plain', name: 'Linux' },
-    { icon: 'devicon-nginx-plain', name: 'Nginx' },
-    { icon: 'devicon-redis-plain', name: 'Terraform' },
+    // DevOps & Infrastructure
+    { icon: 'ri-ship-fill', name: 'Docker' },
+    { icon: 'ri-git-branch-fill', name: 'Git' },
+    { icon: 'ri-github-fill', name: 'CI/CD' },
+    { icon: 'ri-send-plane-fill', name: 'Postman' }, 
 
-    // Package Managers & Build Tools
-    { icon: 'devicon-npm-original-wordmark', name: 'npm' },
-    { icon: 'devicon-yarn-plain', name: 'Yarn' },
+    // Blockchain & Web3
+    { icon: 'ri-links-fill', name: 'Solidity' }, 
+    { icon: 'ri-hard-hat-fill', name: 'Hardhat' }, 
+    { icon: 'ri-braces-line', name: 'ethers.js' }, 
+    { icon: 'ri-shield-check-fill', name: 'OpenZeppelin' }, 
 
-    // API & Backend Technologies
-    { icon: 'devicon-graphql-plain', name: 'GraphQL' },
+    // Blockchain Platforms
+    { icon: 'ri-eth-fill', name: 'Ethereum' },
+    { icon: 'ri-base-station-fill', name: 'Base' }, 
+    // { icon: 'ri-polygon-fill', name: 'Polygon' }, 
 
-    // Testing & Quality Assurance
-    { icon: 'devicon-jest-plain', name: 'Jest' },
-    { icon: 'devicon-jasmine-plain', name: 'Cypress' },
-
-    // Content Management
-    { icon: 'devicon-wordpress-plain', name: 'WordPress' },
-
-    // Additional Technologies
-    { icon: 'devicon-redis-plain', name: 'RabbitMQ' },
+    // DeFi Protocols
+    { icon: 'ri-exchange-funds-fill', name: 'Uniswap' }, 
+    { icon: 'ri-safe-2-fill', name: 'Aave' }, 
+    { icon: 'ri-robot-2-fill', name: 'Flashbots' }, 
   ],
   experience: [
     {
-      title: 'Part-time SE Career Mentor',
-      period: 'Feb 2025 - Present',
-      company: 'Springboard',
-      type: 'experience',
-    },
-    {
-      title: 'ICT/Coding Mentor',
-      period: 'July 2024 - Jan 2025',
-      company: 'Alight',
+      title: 'Software Engineer Part-Time',
+      period: 'Feb 2026 - Present',
+      company: 'Lunds Peace Foundation (LPF)',
       type: 'experience',
     },
     {
       title: 'Senior Full-Stack Developer',
-      period: 'Jan 2023 - June 2024',
-      company: 'WelTel Inc.',
+      period: 'July 2025 - Jan 2026',
+      company: 'Ubaka Inc.',
       type: 'experience',
     },
     {
-      title: 'Technical Team Lead & Mentor',
+      title: 'Software Engineer',
+      period: 'Jan 2023 - June 2024',
+      company: 'Chafetz.',
+      type: 'experience',
+    },
+    {
+      title: 'Software Engineer Alumni',
       period: 'Nov 2021 - Dec 2022',
       company: 'Andela',
       type: 'experience',

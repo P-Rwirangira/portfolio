@@ -16,6 +16,7 @@ export default function Document() {
         />
 
         {/* CSS Libraries */}
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
         <link rel='stylesheet' href='css/devicon.min.css' />
         <link rel='stylesheet' href='css/all.min.css' />
         <link rel='stylesheet' href='css/bootstrap.min.css' />
